@@ -9,7 +9,7 @@ import java.util.List;
 @Service
 public interface IConversionService {
 
-    ConversionBo convert(ConversionBo conversionRequest);
+    ConversionBo convert(ConversionBo conversionBo);
 
     List<ConversionBo> list(Long transactionId, LocalDate transactionDate, int page, int size);
 }

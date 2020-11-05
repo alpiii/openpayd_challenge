@@ -3,6 +3,7 @@ package com.openpayd.conversion.conversion.controller;
 import com.openpayd.conversion.common.model.Response;
 import com.openpayd.conversion.conversion.exception.ParameterException;
 import com.openpayd.conversion.conversion.mapper.ConversionRequestMapper;
+import com.openpayd.conversion.conversion.model.ConversionBo;
 import com.openpayd.conversion.conversion.model.ConversionRequest;
 import com.openpayd.conversion.conversion.service.ConversionServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,6 +12,7 @@ import org.springframework.stereotype.Component;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
+import java.util.List;
 
 @Component
 public class ConversionControllerImpl implements IConversionController {
@@ -23,12 +25,18 @@ public class ConversionControllerImpl implements IConversionController {
 
     @Override
     public ResponseEntity<Response> convert(ConversionRequest request) {
-        return null;
+        ConversionBo bo = conversionRequestMapper.convert(request);
+        bo = conversionService.convert(bo);
+        return Response.success().add("conversion", bo).build();
     }
 
     @Override
     public ResponseEntity<Response> list(String transactionId, String transactionDate, int page, int size) {
-        return null;
+        Long id = validateTransactionId(transactionId);
+        LocalDate date = validateTransactionDate(transactionDate);
+        validateParameters(id, date);
+        List<ConversionBo> conversionList = conversionService.list(id, date, page, size);
+        return Response.success().add("conversions", conversionList).build();
     }
 
     private void validateParameters(Long id, LocalDate date) {
