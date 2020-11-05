@@ -12,6 +12,6 @@ import org.springframework.web.bind.annotation.RestController;
 public interface IExchangeRateController {
 
     @GetMapping("/getrate/{sourceCurrency}/{targetCurrency}")
-    ResponseEntity<Response> convert(@PathVariable("sourceCurrency") String sourceCurrency,
+    ResponseEntity<Response> getRate(@PathVariable("sourceCurrency") String sourceCurrency,
                                      @PathVariable("targetCurrency") String targetCurrency);
 }

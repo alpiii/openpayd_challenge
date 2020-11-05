@@ -1,3 +1,4 @@
+/Users/alpiii/git/openpayd_challenge/src/main/java/com/openpayd/conversion/common/exception/ExceptionHandling.java
 /Users/alpiii/git/openpayd_challenge/src/main/java/com/openpayd/conversion/conversion/controller/ConversionControllerImpl.java
 /Users/alpiii/git/openpayd_challenge/src/main/java/com/openpayd/conversion/ConversionApplication.java
 /Users/alpiii/git/openpayd_challenge/src/main/java/com/openpayd/conversion/conversion/model/ConversionBo.java
@@ -6,6 +7,8 @@
 /Users/alpiii/git/openpayd_challenge/src/main/java/com/openpayd/conversion/conversion/controller/IConversionController.java
 /Users/alpiii/git/openpayd_challenge/src/main/java/com/openpayd/conversion/conversion/mapper/ConversionEntityMapper.java
 /Users/alpiii/git/openpayd_challenge/src/main/java/com/openpayd/conversion/conversion/model/ConversionRequest.java
+/Users/alpiii/git/openpayd_challenge/src/main/java/com/openpayd/conversion/common/exception/RestTemplateException.java
+/Users/alpiii/git/openpayd_challenge/src/main/java/com/openpayd/conversion/common/restconfig/RestTemplateConfig.java
 /Users/alpiii/git/openpayd_challenge/src/main/java/com/openpayd/conversion/conversion/service/ConversionServiceImpl.java
 /Users/alpiii/git/openpayd_challenge/src/main/java/com/openpayd/conversion/conversion/service/IConversionService.java
 /Users/alpiii/git/openpayd_challenge/src/main/java/com/openpayd/conversion/exchangerate/model/ExchangeRateBo.java

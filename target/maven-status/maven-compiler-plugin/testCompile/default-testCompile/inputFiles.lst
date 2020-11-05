@@ -1,1 +1,3 @@
 /Users/alpiii/git/openpayd_challenge/src/test/java/com/openpayd/conversion/ConversionApplicationTests.java
+/Users/alpiii/git/openpayd_challenge/src/test/java/com/openpayd/conversion/exchangerate/service/ExchangeRateServiceTest.java
+/Users/alpiii/git/openpayd_challenge/src/test/java/com/openpayd/conversion/exchangerate/controller/ExchangeRateControllerTest.java
