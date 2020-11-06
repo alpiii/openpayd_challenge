@@ -144,5 +144,8 @@ Response :
 }
  ```
 
+Postman collection file can be found in the main folder of the project.
+File name : `openpayd.postman_collection.json`
+
 
 

@@ -1,0 +1,63 @@
+{
+	"info": {
+		"_postman_id": "3b76546a-c1db-42b8-8448-2420dba04cd0",
+		"name": "openpayd",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getRate",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "listAll",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "postconvert",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"sourceCurrency\" : \"EUR\",\n\t\"targetCurrency\" : \"TRY\",\n\t\"sourceAmount\" : 100000\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/conversion/convert",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"conversion",
+						"convert"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
